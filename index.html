@@ -50,6 +50,21 @@
 			font-size: 150%;
 		}
 		</style>
+		
+		<script type="text/javascript">
+			function GetDays(){
+					var dropdt = new Date(document.getElementById("drop_date").value);
+					var pickdt = new Date(document.getElementById("pick_date").value);
+					return parseInt((dropdt - pickdt) / (24 * 3600 * 1000));
+			}
+
+			function cal(){
+				if(document.getElementById("drop_date")){
+					document.getElementById("numdays2").value=GetDays();
+				}  
+			}
+		</script>
+	
 	</head>
 	<body>
 		<div class="bg">
@@ -58,7 +73,7 @@
 			
 			<table id="castle">
 				<tr>
-					<th colspan="6">PRONTERA CASTLES</th>
+					<th colspan="7">PRONTERA CASTLES</th>
 				</tr>
 				<tr>
 					<th>LOCATION</th>
@@ -66,6 +81,7 @@
 					<th colspan="2">INHABITANTS</th>
 					<th>LEADER</th>
 					<th>HELD FOR</th>
+					<th>BREAKS</th>
 				</tr>
 				<tr>
 					<td>Pron 1</td>
@@ -74,6 +90,7 @@
 					<td>Ethereal Royale</td>
 					<td>Billy</td>
 					<td>0 Days</td>
+					<td>7</td>
 				</tr>
 				<tr>
 					<td>Pron 5</td>
@@ -82,6 +99,7 @@
 					<td>Oops`</td>
 					<td>tOrzA`</td>
 					<td>0 Days</td>
+					<td>9</td>
 				</tr>
 				<tr>
 					<td>Pron 7</td>
@@ -90,6 +108,7 @@
 					<td>CeruleanV</td>
 					<td>Blood</td>
 					<td>0 Days</td>
+					<td>2</td>
 				</tr>
 				<tr>
 					<td>Pron 11</td>
@@ -98,6 +117,7 @@
 					<td>Fatality-</td>
 					<td>Depression-</td>
 					<td>0 Days</td>
+					<td>10</td>
 				</tr>
 				<tr>
 					<td>Pron Mid</td>
@@ -106,12 +126,13 @@
 					<td>Fatality-</td>
 					<td>Depression-</td>
 					<td>0 Days</td>
+					<td>14</td>
 				</tr>
 			</table>
 			<br><br><br>
 			<table id="castle">
 				<tr>
-					<th colspan="6">GEFFEN CASTLES</th>
+					<th colspan="7">GEFFEN CASTLES</th>
 				</tr>
 				<tr>
 					<th>LOCATION</th>
@@ -119,6 +140,7 @@
 					<th colspan="2">INHABITANTS</th>
 					<th>LEADER</th>
 					<th>HELD FOR</th>
+					<th>BREAKS</th>
 				</tr>
 				<tr>
 					<td>Gef 1</td>
@@ -127,6 +149,7 @@
 					<td>Ethereal Order</td>
 					<td>OnePunchMan</td>
 					<td>0 Days</td>
+					<td>8</td>
 				</tr>
 				<tr>
 					<td>Gef 5</td>
@@ -135,6 +158,7 @@
 					<td>~.Just.a.Game.~</td>
 					<td>thePHILOsophy</td>
 					<td>0 Days</td>
+					<td>3</td>
 				</tr>
 				<tr>
 					<td>Gef 6</td>
@@ -143,6 +167,7 @@
 					<td>Immanent Regalia</td>
 					<td>Andy[EmpMode]</td>
 					<td>0 Days</td>
+					<td>7</td>
 				</tr>
 				<tr>
 					<td>Gef 11</td>
@@ -151,20 +176,22 @@
 					<td>Ethereal Order</td>
 					<td>OnePunchMan</td>
 					<td>0 Days</td>
+					<td>13</td>
 				</tr>
 				<tr>
 					<td>Gef 12</td>
-					<td>Yssnelf</td>
+					<td>Bergel</td>
 					<td><img src="emblems\fatality.png" alt="fatality"></td>
 					<td>Fatality-</td>
 					<td>Depression-</td>
 					<td>0 Days</td>
+					<td>4</td>
 				</tr>
 			</table>
 			<br><br><br>
 			<table id="castle">
 				<tr>
-					<th colspan="6">PAYON CASTLES</th>
+					<th colspan="7">PAYON CASTLES</th>
 				</tr>
 				<tr>
 					<th>LOCATION</th>
@@ -172,52 +199,58 @@
 					<th colspan="2">INHABITANTS</th>
 					<th>LEADER</th>
 					<th>HELD FOR</th>
+					<th>BREAKS</th>
 				</tr>
 				<tr>
 					<td>Pay 1</td>
-					<td>Bool-Yong</td>
+					<td>Shadow of Buddha</td>
 					<td><img src="emblems\ethereal.png" alt="ethereal"></td>
 					<td>Ethereal Royale</td>
 					<td>Billy</td>
 					<td>0 Days</td>
+					<td>12</td>
 				</tr>
 				<tr>
 					<td>Pay 5</td>
-					<td>Chun-Dan</td>
+					<td>Garden of Heaven</td>
 					<td><img src="emblems\oops.png" alt="oops"></td>
 					<td>Oops`</td>
 					<td>tOrzA`</td>
 					<td>0 Days</td>
+					<td>6</td>
 				</tr>
 				<tr>
 					<td>Pay 7</td>
-					<td>Hong-Roo</td>
+					<td>Red Palace</td>
 					<td><img src="emblems\imperialregalia.png" alt="imperialregalia"></td>
 					<td>Imperial Regalia</td>
 					<td>Truth</td>
 					<td>3 Days</td>
+					<td>0</td>
 				</tr>
 				<tr>
 					<td>Pay 11</td>
-					<td>Myung-Jung</td>
+					<td>Arbor of Light</td>
 					<td><img src="emblems\valkyriespirit.png" alt="valkyriespirit"></td>
 					<td>Valkyrie Spirit</td>
 					<td>Autumn</td>
 					<td>0 Days</td>
+					<td>15</td>
 				</tr>
 				<tr>
 					<td>Pay 12</td>
-					<td>Jukk-Rim-Hyun</td>
+					<td>Bamboo Forest Hermitage</td>
 					<td><img src="emblems\pitchforkemporium.png" alt="pitchforkemporium"></td>
 					<td>Pitchfork Emporium</td>
 					<td>Trap</td>
 					<td>0 Days</td>
+					<td>6</td>
 				</tr>
 			</table>
 			<br><br><br>
 			<table id="castle">
 				<tr>
-					<th colspan="6">AL DE BARAN CASTLES</th>
+					<th colspan="7">AL DE BARAN CASTLES</th>
 				</tr>
 				<tr>
 					<th>LOCATION</th>
@@ -225,6 +258,7 @@
 					<th colspan="2">INHABITANTS</th>
 					<th>LEADER</th>
 					<th>HELD FOR</th>
+					<th>BREAKS</th>
 				</tr>
 				<tr>
 					<td>Adb 1</td>
@@ -233,6 +267,7 @@
 					<td>Synergy</td>
 					<td>Synmax</td>
 					<td>3 Days</td>
+					<td>0</td>
 				</tr>
 				<tr>
 					<td>Adb 5</td>
@@ -241,6 +276,7 @@
 					<td>DarkEmpire IV</td>
 					<td>Rosane`</td>
 					<td>0 Days</td>
+					<td>1</td>
 				</tr>
 				<tr>
 					<td>Adb 6</td>
@@ -249,6 +285,7 @@
 					<td>Atlas</td>
 					<td>AtlasEx</td>
 					<td>3 Days</td>
+					<td>0</td>
 				</tr>
 				<tr>
 					<td>Adb 7</td>
@@ -257,6 +294,7 @@
 					<td>Imperial Regalia</td>
 					<td>Truth</td>
 					<td>0 Days</td>
+					<td>13</td>
 				</tr>
 				<tr>
 					<td>Adb 11</td>
@@ -265,8 +303,10 @@
 					<td>Oops`</td>
 					<td>tOrzA`</td>
 					<td>0 Days</td>
+					<td>3</td>
 				</tr>
 			</table>
+			<br><br><br>
 		</div>
 	</body>
 </html>
