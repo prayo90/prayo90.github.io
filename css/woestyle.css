@@ -6,7 +6,7 @@ body, html {
 h1{color: white;}
 
 .bg{
-	background-image: url("../background/plainbackground.jpg");
+	background-image: url("../images/background/plainbackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -14,7 +14,7 @@ h1{color: white;}
 }
 
 .fbg{
-	background-image: url("../background/plainbackground.jpg");
+	background-image: url("../images/background/plainbackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100%;
