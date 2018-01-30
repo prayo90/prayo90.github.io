@@ -1,264 +1,32 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css\woestyle.css">
-		<script type="text/javascript">
-			function GetDays(){
-					var dropdt = new Date(document.getElementById("drop_date").value);
-					var pickdt = new Date(document.getElementById("pick_date").value);
-					return parseInt((dropdt - pickdt) / (24 * 3600 * 1000));
-			}
-
-			function cal(){
-				if(document.getElementById("drop_date")){
-					document.getElementById("numdays2").value=GetDays();
-				}  
-			}
-		</script>
-	
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width,initial-scale=1">
+		<link rel=apple-touch-icon sizes=57x57 href=/static/favicons/apple-icon-57x57.png>
+		<link rel=apple-touch-icon sizes=60x60 href=/static/favicons/apple-icon-60x60.png>
+		<link rel=apple-touch-icon sizes=72x72 href=/static/favicons/apple-icon-72x72.png>
+		<link rel=apple-touch-icon sizes=76x76 href=/static/favicons/apple-icon-76x76.png>
+		<link rel=apple-touch-icon sizes=114x114 href=/static/favicons/apple-icon-114x114.png>
+		<link rel=apple-touch-icon sizes=120x120 href=/static/favicons/apple-icon-120x120.png>
+		<link rel=apple-touch-icon sizes=144x144 href=/static/favicons/apple-icon-144x144.png>
+		<link rel=apple-touch-icon sizes=152x152 href=/static/favicons/apple-icon-152x152.png>
+		<link rel=apple-touch-icon sizes=180x180 href=/static/favicons/apple-icon-180x180.png>
+		<link rel=icon type=image/png sizes=192x192 href=/static/favicons/android-icon-192x192.png>
+		<link rel=icon type=image/png sizes=32x32 href=/static/favicons/favicon-32x32.png>
+		<link rel=icon type=image/png sizes=96x96 href=/static/favicons/favicon-96x96.png>
+		<link rel=icon type=image/png sizes=16x16 href=/static/favicons/favicon-16x16.png>
+		<link rel=manifest href=/static/favicons/manifest.json>
+		<meta name=msapplication-TileColor content=#ffffff>
+		<meta name=msapplication-TileImage content=/ms-icon-144x144.png>
+		<meta name=theme-color content=#ffffff>
+		<title>Ragnarok MYSG Woe</title>
+		<link href=/static/css/app.610f2d0ea9ed6e7909bbf8a7612931cd.css rel=stylesheet>
 	</head>
 	<body>
-		<div class="bg">
-			<center><img src="images\background\woeheader.gif" alt="woeheader"></center>
-			<h1 align="center">THOR SERVER WOE STANDING 16th JAN 2018</h1>
-			
-			<table id="castle">
-				<tr>
-					<th colspan="7">PRONTERA CASTLES</th>
-				</tr>
-				<tr>
-					<th>LOCATION</th>
-					<th>CASTLES</th>
-					<th colspan="2">INHABITANTS</th>
-					<th>LEADER</th>
-					<th>HELD FOR</th>
-					<th>BREAKS</th>
-				</tr>
-				<tr>
-					<td>Pron 1</td>
-					<td>Kendul</td>
-					<td><img src="images\emblems\ethereal.png" alt="ethereal"></td>
-					<td>Ethereal Royale</td>
-					<td>Billy</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\kendul.html">7</a></td>
-				</tr>
-				<tr>
-					<td>Pron 5</td>
-					<td>Swanhild</td>
-					<td><img src="images\emblems\oops.png" alt="oops"></td>
-					<td>Oops`</td>
-					<td>tOrzA`</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\swanhild.html">9</a></td>
-				</tr>
-				<tr>
-					<td>Pron 7</td>
-					<td>Kriemhild</td>
-					<td><img src="images\emblems\ceruleanv.png" alt="ceruleanv"></td>
-					<td>CeruleanV</td>
-					<td>Blood</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\kriemhild.html">2</a></td>
-				</tr>
-				<tr>
-					<td>Pron 11</td>
-					<td>Skoegul</td>
-					<td><img src="images\emblems\fatality.png" alt="fatality"></td>
-					<td>Fatality-</td>
-					<td>Depression-</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\skoegul.html">10</a></td>
-				</tr>
-				<tr>
-					<td>Pron Mid</td>
-					<td>Lazreagues</td>
-					<td><img src="images\emblems\fatality.png" alt="fatality"></td>
-					<td>Fatality-</td>
-					<td>Depression-</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\lazreagues.html">14</a></td>
-				</tr>
-			</table>
-			<br><br><br>
-			<table id="castle">
-				<tr>
-					<th colspan="7">GEFFEN CASTLES</th>
-				</tr>
-				<tr>
-					<th>LOCATION</th>
-					<th>CASTLES</th>
-					<th colspan="2">INHABITANTS</th>
-					<th>LEADER</th>
-					<th>HELD FOR</th>
-					<th>BREAKS</th>
-				</tr>
-				<tr>
-					<td>Gef 1</td>
-					<td>Jyolbriger</td>
-					<td><img src="images\emblems\ethereal.png" alt="ethereal"></td>
-					<td>Ethereal Order</td>
-					<td>OnePunchMan</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\jyolbriger.html">8</a></td>
-				</tr>
-				<tr>
-					<td>Gef 5</td>
-					<td>Melcedez</td>
-					<td><img src="images\emblems\justagame.png" alt="justagame"></td>
-					<td>~.Just.a.Game.~</td>
-					<td>thePHILOsophy</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\melcedez.html">3</a></td>
-				</tr>
-				<tr>
-					<td>Gef 6</td>
-					<td>Leprion</td>
-					<td><img src="images\emblems\immanentregalia.png" alt="immanentregalia"></td>
-					<td>Immanent Regalia</td>
-					<td>Andy[EmpMode]</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\leprion.html">7</a></td>
-				</tr>
-				<tr>
-					<td>Gef 11</td>
-					<td>Yssnelf</td>
-					<td><img src="images\emblems\ethereal.png" alt="ethereal"></td>
-					<td>Ethereal Order</td>
-					<td>OnePunchMan</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\yssnelf.html">13</a></td>
-				</tr>
-				<tr>
-					<td>Gef 12</td>
-					<td>Bergel</td>
-					<td><img src="images\emblems\fatality.png" alt="fatality"></td>
-					<td>Fatality-</td>
-					<td>Depression-</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\bergel.html">4</a></td>
-				</tr>
-			</table>
-			<br><br><br>
-			<table id="castle">
-				<tr>
-					<th colspan="7">PAYON CASTLES</th>
-				</tr>
-				<tr>
-					<th>LOCATION</th>
-					<th>CASTLES</th>
-					<th colspan="2">INHABITANTS</th>
-					<th>LEADER</th>
-					<th>HELD FOR</th>
-					<th>BREAKS</th>
-				</tr>
-				<tr>
-					<td>Pay 1</td>
-					<td>Shadow of Buddha</td>
-					<td><img src="images\emblems\ethereal.png" alt="ethereal"></td>
-					<td>Ethereal Royale</td>
-					<td>Billy</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\shadow_of_buddha.html">12</a></td>
-				</tr>
-				<tr>
-					<td>Pay 5</td>
-					<td>Garden of Heaven</td>
-					<td><img src="images\emblems\oops.png" alt="oops"></td>
-					<td>Oops`</td>
-					<td>tOrzA`</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\garden_of_heaven.html">6</a></td>
-				</tr>
-				<tr>
-					<td>Pay 7</td>
-					<td>Red Palace</td>
-					<td><img src="images\emblems\imperialregalia.png" alt="imperialregalia"></td>
-					<td>Imperial Regalia</td>
-					<td>Truth</td>
-					<td>5 Days</td>
-					<td><a href="archive\20180116\red_palace.html">0</a></td>
-				</tr>
-				<tr>
-					<td>Pay 11</td>
-					<td>Arbor of Light</td>
-					<td><img src="images\emblems\valkyriespirit.png" alt="valkyriespirit"></td>
-					<td>Valkyrie Spirit</td>
-					<td>Autumn</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\arbor_of_light.html">15</a></td>
-				</tr>
-				<tr>
-					<td>Pay 12</td>
-					<td>Bamboo Forest Hermitage</td>
-					<td><img src="images\emblems\pitchforkemporium.png" alt="pitchforkemporium"></td>
-					<td>Pitchfork Emporium</td>
-					<td>Trap</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\bamboo_forest_hermitage.html">6</a></td>
-				</tr>
-			</table>
-			<br><br><br>
-			<table id="castle">
-				<tr>
-					<th colspan="7">AL DE BARAN CASTLES</th>
-				</tr>
-				<tr>
-					<th>LOCATION</th>
-					<th>CASTLES</th>
-					<th colspan="2">INHABITANTS</th>
-					<th>LEADER</th>
-					<th>HELD FOR</th>
-					<th>BREAKS</th>
-				</tr>
-				<tr>
-					<td>Adb 1</td>
-					<td>Wuizburg</td>
-					<td><img src="images\emblems\synergy.png" alt="synergy"></td>
-					<td>Synergy</td>
-					<td>Synmax</td>
-					<td>5 Days</td>
-					<td><a href="archive\20180116\wuizburg.html">0</a></td>
-				</tr>
-				<tr>
-					<td>Adb 5</td>
-					<td>Rothenburg</td>
-					<td><img src="images\emblems\darkempire.png" alt="darkempire"></td>
-					<td>DarkEmpire IV</td>
-					<td>Rosane`</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\rothenburg.html">1</a></td>
-				</tr>
-				<tr>
-					<td>Adb 6</td>
-					<td>Nuernberg</td>
-					<td><img src="images\emblems\atlasnew.png" alt="atlas"></td>
-					<td>Atlas</td>
-					<td>AtlasEx</td>
-					<td>5 Days</td>
-					<td><a href="archive\20180116\nuernberg.html">0</a></td>
-				</tr>
-				<tr>
-					<td>Adb 7</td>
-					<td>Neuschwanstein</td>
-					<td><img src="images\emblems\imperialregalia.png" alt="imperialregalia"></td>
-					<td>Imperial Regalia</td>
-					<td>Truth</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\neuschwanstein.html">13</a></td>
-				</tr>
-				<tr>
-					<td>Adb 11</td>
-					<td>Hohenschwangau</td>
-					<td><img src="images\emblems\oops.png" alt="oops"></td>
-					<td>Oops`</td>
-					<td>tOrzA`</td>
-					<td>2 Days</td>
-					<td><a href="archive\20180116\hohenschwangau.html">3</a></td>
-				</tr>
-			</table>
-			<br><br><br>
-		</div>
+		<div id=app></div>
+		<script type=text/javascript src=/static/js/manifest.e0dc445f159e4a7b2b30.js></script>
+		<script type=text/javascript src=/static/js/vendor.135a81832d953fdb964f.js></script>
+		<script type=text/javascript src=/static/js/app.403505d661bdc2d8c8e7.js></script>
 	</body>
 </html>
